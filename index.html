@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+       
+    
+    <!--Font-Awesome Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Aleo|Slabo+27px" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Validation</h2>
+        <input type="password" id="password" placeholder="Passwort eingeben"
+        onInput="check()" />
+       <br>
+         <div id="set" >
+        <div id="count">Länge : 0</div>
+        <i id="see" onclick="see()" class="far fa-eye"></i>
+         </div>
+           <div id="check0">
+                <i class="far fa-check-circle"></i>  <span> Länge mehr als 5.</span>
+           </div>
+           <div id="check1">
+                <i class="far fa-check-circle"></i>  <span> Länge weniger als 10.</span>
+           </div>
+           <div id="check2">
+                <i class="far fa-check-circle"></i>  <span> Enthält nummer.</span>
+           </div>
+           <div id="check3">
+                <i class="far fa-check-circle"></i>   <span> Enthält spezielles Zeichen.</span>
+           </div>
+           <div id="check4">
+                <i class="far fa-check-circle"></i>  <span> Enthält kein Leerzeichen.</span>
+           </div>
+    </div>
+</body>
+</html>
